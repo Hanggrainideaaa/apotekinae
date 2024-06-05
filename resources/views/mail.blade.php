@@ -185,7 +185,7 @@
             <tr>
               <td align="left" bgcolor="#ffffff" style="padding: 0px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
                 <p style="margin: 0;">
-                  Terima kasih telah mendaftar di Apoteku. Silakan klik tombol di bawah ini untuk mengonfirmasi alamat email Anda.
+                  Terima kasih telah mendaftar di Apotekinaja. Silakan klik tombol di bawah ini untuk mengonfirmasi alamat email Anda.
                 </p>
               </td>
             </tr>
@@ -225,7 +225,7 @@
             <!-- start copy -->
             <tr>
               <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; border-bottom: 3px solid #d4dadf">
-                <p style="margin: 0;">Salam,<br><a href="https://Xeron.io/" target="_blank">Apoteku</a></p>
+                <p style="margin: 0;">Salam,<br><a href="https://Xeron.io/" target="_blank">Apotekinaja</a></p>
               </td>
             </tr>
             <!-- end copy -->
@@ -254,7 +254,7 @@
             <tr>
               <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
                 <p style="margin: 0;">
-                  Anda ({{ $user->email }}) menerima email ini karena Anda telah mendaftar di <a href="/" target="_blank">Apoteku</a>.
+                  Anda ({{ $user->email }}) menerima email ini karena Anda telah mendaftar di <a href="/" target="_blank">Apotekinaja</a>.
                 </p>
               </td>
             </tr>
@@ -264,7 +264,7 @@
             <tr>
               <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
                 <p style="margin: 0;">&copy; 2024
-                  <a href="/" target="_blank">Apoteku</a>. All rights reserved.
+                  <a href="/" target="_blank">Apotekinaja</a>. All rights reserved.
                 </p>
               </td>
             </tr>
