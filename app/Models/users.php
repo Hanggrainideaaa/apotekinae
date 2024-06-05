@@ -37,6 +37,6 @@ class users extends Authenticatable implements JWTSubject
     }
     public function apotek()
     {
-        return $this->hasOne(Apotek::class, 'user_id');
+        return $this->hasOne(apotek::class, 'user_id');
     }
 }
