@@ -41,7 +41,7 @@ class UsersController extends Controller
     {
         $validation = Validator::make($request->all(), [
             'name' => 'required',
-            'email' => 'required|unique',
+            'email' => 'required|unique:users,email',
             'password' => 'required|min:8|string',
         ]);
 
@@ -62,7 +62,7 @@ class UsersController extends Controller
         Mail::to($user->email)->send(new VerificationEmail($user));
         return response()->json([
             'success' => 'true'
-        ],409);
+        ],200);
 
     }
 
