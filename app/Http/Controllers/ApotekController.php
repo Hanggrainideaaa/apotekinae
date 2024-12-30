@@ -12,7 +12,7 @@ class ApotekController extends Controller
 {
     public function index()
     {
-        $data = apotek::orderBy('id')->get();
+        $data = apotek::orderBy('id')->with('users')->get();
         return response()->json([
             'status'=>true,
             'massage'=>'Succesfully get Data',
