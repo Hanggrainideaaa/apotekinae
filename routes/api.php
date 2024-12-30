@@ -31,6 +31,8 @@ Route::put('/apotek/{id}', [ApotekController::class, 'update']);
 Route::delete('/apotek/{id}', [ApotekController::class, 'destroy']);
 Route::put('/apotek/verified/{id}', [ApotekController::class, 'isVerified']);
 
+Route::get('/tampilresep', [RequestController::class, 'index']);
+Route::get('/results', [ResultController::class, 'index']);
 Route::post('/resep', [RequestController::class, 'create']);
 Route::post('/transaction', [ResultController::class, 'create']);
 Route::put('/accepted', [ResultController::class, 'isAccepted']);

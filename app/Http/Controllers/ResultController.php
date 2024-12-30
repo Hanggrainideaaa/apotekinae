@@ -11,6 +11,17 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 
 class ResultController extends Controller
 {
+    public function index()
+{
+    // Mengambil semua data dari tabel Result beserta relasi yang dibutuhkan
+    $results = Result::with(['request', 'user'])->get();
+
+    return response()->json([
+        'status' => true,
+        'data' => $results
+    ], 200);
+}
+
     public function create(Request $request)
     {
         // Validasi input

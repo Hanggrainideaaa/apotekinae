@@ -10,6 +10,16 @@ use Illuminate\Support\Facades\Validator;
 
 class RequestController extends Controller
 {
+    public function index()
+    {
+        $requests = ModelsRequest::all();
+
+        return response()->json([
+            'status' => true,
+            'data' => $requests
+        ], 200);
+    }
+    
 public function create(Request $request)
     {
         $validation = Validator::make($request->all(), [
