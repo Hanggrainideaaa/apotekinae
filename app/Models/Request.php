@@ -14,8 +14,8 @@ class Request extends Model
         'user_id',
     ];
 
-    public function users()
+    public function user()
     {
-        return $this->belongsTo(users::class, 'user_id');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

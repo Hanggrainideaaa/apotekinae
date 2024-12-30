@@ -12,7 +12,7 @@ class RequestController extends Controller
 {
     public function index()
     {
-        $requests = ModelsRequest::all();
+        $requests = ModelsRequest::with('user:id,name,email')->get();
 
         return response()->json([
             'status' => true,

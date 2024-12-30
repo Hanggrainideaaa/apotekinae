@@ -14,7 +14,7 @@ class UsersController extends Controller
 {
     public function index()
     {
-        $data = users::orderBy('id')->get();
+        $data = users::orderBy('id')->with('apotek')->get();
         return response()->json([
             'status'=>true,
             'massage'=>'Succesfully get Data',

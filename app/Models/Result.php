@@ -18,16 +18,21 @@ class Result extends Model
         'isTaken',
     ];
 
+// Relasi ke tabel users
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    // Relasi ke tabel requests (opsional jika diperlukan)
     public function request()
     {
         return $this->belongsTo(Request::class, 'request_id');
     }
-    public function users()
-    {
-        return $this->belongsTo(users::class, 'user_id');
-    }
+
+    // Relasi ke tabel apotek (opsional jika diperlukan)
     public function apotek()
     {
-        return $this->belongsTo(apotek::class, 'apotek_id');
+        return $this->belongsTo(Apotek::class, 'apotek_id');
     }
 }
